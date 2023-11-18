@@ -88,7 +88,7 @@
             Graphics.DrawEllipse(new Pen(Color.Blue), x - 2, y - 2, 10, 10);
             if (Vertexes.Count > 1)
                 Graphics.DrawLine(new Pen(Color, DrawPen.Width), Vertexes[Vertexes.Count - 2].ToPoint(),
-                    Vertexes[Vertexes.Count - 1].ToPoint());
+                    Vertexes[^1].ToPoint());
         }
 
         /// <summary>

@@ -35,7 +35,7 @@
             SelectFigureComboBox = new ComboBox();
             GTComboBox = new ComboBox();
             ButtonForTMO = new Button();
-            PaintCubSpline = new Button();
+            PaintBZ = new Button();
             ToPaint = new Button();
             ButtonClear_ = new Button();
             DeleteFigure_ = new Button();
@@ -122,15 +122,15 @@
             ButtonForTMO.UseVisualStyleBackColor = true;
             ButtonForTMO.Click += ButtonForTMO_Click;
             // 
-            // PaintCubSpline
+            // PaintBZ
             // 
-            PaintCubSpline.Location = new Point(986, 121);
-            PaintCubSpline.Name = "PaintCubSpline";
-            PaintCubSpline.Size = new Size(133, 72);
-            PaintCubSpline.TabIndex = 4;
-            PaintCubSpline.Text = "Нарисовать кубический сплайн";
-            PaintCubSpline.UseVisualStyleBackColor = true;
-            PaintCubSpline.Click += PaintCubeSpline_Click;
+            PaintBZ.Location = new Point(986, 121);
+            PaintBZ.Name = "PaintBZ";
+            PaintBZ.Size = new Size(133, 55);
+            PaintBZ.TabIndex = 4;
+            PaintBZ.Text = "Нарисовать кривую безье";
+            PaintBZ.UseVisualStyleBackColor = true;
+            PaintBZ.Click += PaintCubeSpline_Click;
             // 
             // ToPaint
             // 
@@ -211,7 +211,7 @@
             Controls.Add(DeleteFigure_);
             Controls.Add(ButtonClear_);
             Controls.Add(ToPaint);
-            Controls.Add(PaintCubSpline);
+            Controls.Add(PaintBZ);
             Controls.Add(ButtonForTMO);
             Controls.Add(GTComboBox);
             Controls.Add(SelectFigureComboBox);
@@ -237,7 +237,7 @@
         private ComboBox SelectFigureComboBox;
         private ComboBox GTComboBox;
         private Button ButtonForTMO;
-        private Button PaintCubSpline;
+        private Button PaintBZ;
         private Button ToPaint;
         private Button ButtonClear_;
         private Button DeleteFigure_;
